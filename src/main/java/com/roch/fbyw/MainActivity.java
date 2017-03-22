@@ -109,7 +109,6 @@ public class MainActivity extends MainBaseActivity implements View.OnClickListen
             layout.setLayoutParams(lParams);  //ResourceUtil.getInstance().getColorById(R.color.color_145bba)
             layout.setBackgroundColor(getResources().getColor(R.color.color_145bba));
         }
-
         // 如果版本大于等于19即Android 4.4，小于21即Android 5.0
         if (Build.VERSION_CODES.LOLLIPOP > Build.VERSION.SDK_INT
                 && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
@@ -145,7 +144,6 @@ public class MainActivity extends MainBaseActivity implements View.OnClickListen
             layout.setLayoutParams(lParams); // ResourceUtil.getInstance().getColorById(R.color.color_145bba)
             layout.setBackgroundColor(getResources().getColor(R.color.color_145bba));
         }
-
         // 如果版本小于19，即小于Android 4.4
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             layout.setVisibility(View.GONE);
@@ -169,7 +167,6 @@ public class MainActivity extends MainBaseActivity implements View.OnClickListen
         iv_saoyisao.setVisibility(View.VISIBLE);
         iv_saoyisao.setOnClickListener(this);
         layout = (LinearLayout) findViewById(R.id.ll);
-//        layout.setOnClickListener(this);
     }
 
     /**
