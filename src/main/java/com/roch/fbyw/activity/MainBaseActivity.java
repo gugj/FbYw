@@ -24,7 +24,6 @@ public class MainBaseActivity extends BaseActivity{
 
 		//设置状态栏的颜色
 		setMyStatusBarColor();
-
 //		if (Build.VERSION_CODES.LOLLIPOP > Build.VERSION.SDK_INT && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 //			CommonUtil.getInstance(this).getState();
 //		}
@@ -32,7 +31,6 @@ public class MainBaseActivity extends BaseActivity{
 
 	/**
 	 * 设置状态栏的颜色
-	 * 2016年11月3日
 	 */
 	@SuppressLint({ "InlinedApi", "NewApi" })
 	private void setMyStatusBarColor() {
@@ -61,7 +59,6 @@ public class MainBaseActivity extends BaseActivity{
 
 	/**
 	 * 获取状态栏的高度
-	 * @return
 	 */
 	public int getStatusBarHeight() {
 		int result = 0;
