@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 主题色 -->
+    <color name="color_145bba">#145bba</color>
+    <!-- 通知栏颜色 -->
+    <color name="bule_155bbb">#155bbb</color>
+
+    <!-- 以前的 -->
+    <color name="white">#FFFFFF</color>
+    <color name="enterFalse">#4C9AFA</color>
+    <color name="enterTrue">#3987E6</color>
+
+    <!-- 新闻客户端用的颜色 -->
+    <color name="black_overlay">#66000000</color>
+    <color name="gray_background">#ffececec</color>
+    <color name="black">#000000</color>
+    <color name="red">#E51A18</color>
+    <color name="line_color">#523E2E</color>
+    <color name="search_tab_nomarl">#363636</color>
+    <color name="search_tab_select">#E82926</color>
+    <color name="menu_item_text_color">#E60200</color>
+    <color name="news_item_has_read_textcolor">#828282</color>
+    <color name="news_item_no_read_textcolor">#363636</color>
+
+    <!-- 灰白的 -->
+    <color name="ashen">#f5f5f5</color>
+    <color name="orange_f7cc79">#f7cc79</color>
+
+</resources>

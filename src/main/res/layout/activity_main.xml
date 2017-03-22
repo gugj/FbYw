@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/top_title_strues"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+        </LinearLayout>
+
+        <include layout="@layout/activity_title_toolbar" />
+    </LinearLayout>
+
+    <!--<include layout="@layout/activity_title_toolbar"></include>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <include layout="@layout/navigation_content"></include>
+    </RelativeLayout>
+
+    <com.roch.fbyw.view.MyLazyViewpager
+        android:id="@+id/vp_home"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:visibility="gone"/>
+
+    <RadioGroup
+        android:id="@+id/rg_home"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/bottom_tab_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="2dp" >
+
+        <RadioButton
+            android:id="@+id/rb_home"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_function"
+            android:text="@string/tab_function" />
+
+        <RadioButton
+            android:id="@+id/rb_news_center"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_newscenter"
+            android:text="@string/tab_news_center" />
+
+        <RadioButton
+            android:id="@+id/rb_smart_service"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_smartservice"
+            android:text="@string/tab_smart_service" />
+
+        <RadioButton
+            android:id="@+id/rb_gov_affairs"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_govaffairs"
+            android:text="@string/tab_gov_affairs" />
+
+        <RadioButton
+            android:id="@+id/rb_setting"
+            style="@style/main_tab_bottom"
+            android:drawableTop="@drawable/icon_setting"
+            android:text="@string/tab_setting" />
+    </RadioGroup>
+
+</LinearLayout>
