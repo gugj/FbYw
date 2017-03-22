@@ -24,10 +24,13 @@ public class MainBaseActivity extends BaseActivity{
 
 		//设置状态栏的颜色
 		setMyStatusBarColor();
+
 //		if (Build.VERSION_CODES.LOLLIPOP > Build.VERSION.SDK_INT && Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 //			CommonUtil.getInstance(this).getState();
 //		}
+
 	}
+
 
 	/**
 	 * 设置状态栏的颜色
@@ -56,6 +59,7 @@ public class MainBaseActivity extends BaseActivity{
 			}
 		}
 	}
+
 
 	/**
 	 * 获取状态栏的高度
