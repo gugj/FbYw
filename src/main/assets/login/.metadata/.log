@@ -1,0 +1,245 @@
+!SESSION 2017-03-21 08:32:15.387 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=1.7.0_51
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Framework arguments:  -login -application com.aptana.commandline.launcher.LauncherApplication F:\tomcat\webapps\login\login.html
+Command-line arguments:  -os win32 -ws win32 -arch x86 -login -data   -application com.aptana.commandline.launcher.LauncherApplication F:\tomcat\webapps\login\login.html
+
+!ENTRY com.aptana.rcp 1 0 2017-03-21 08:32:16.646
+!MESSAGE (Build null) [INFO]  ide start check begin
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:16.652
+!MESSAGE (Build null) [ERROR]  getRawLocationURI: file:/F:/tomcat/webapps/login
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:16.661
+!MESSAGE (Build null) [ERROR]  checkInstanceLocation
+
+!ENTRY com.pandora.core.utils 4 0 2017-03-21 08:32:16.673
+!MESSAGE (Build null) [ERROR]  remote-debugging-port == 1649
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:16.685
+!MESSAGE (Build null) [ERROR]  init CEF
+
+!ENTRY org.eclipse.ui 2 0 2017-03-21 08:32:16.801
+!MESSAGE Warnings while parsing the key bindings from the 'org.eclipse.ui.commands' extension point
+!SUBENTRY 1 org.eclipse.ui 2 0 2017-03-21 08:32:16.801
+!MESSAGE Could not parse key sequence: plug-in='com.pandora.ui', id='org.eclipse.ui.edit.text.contentAssist.proposals', keySequence='Ctrl+Sapce'
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:17.047
+!MESSAGE (Build null) [ERROR]  ********HBuilder正常启动：preStartup********
+
+!ENTRY org.eclipse.ui 4 4 2017-03-21 08:32:17.305
+!MESSAGE Unable to create menu item "org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction", command "org.eclipse.ui.cheatsheets.actions.CheatSheetHelpMenuAction" not defined
+
+!ENTRY com.aptana.scripting 4 0 2017-03-21 08:32:18.797
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'Build–in constant' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.scripting 4 0 2017-03-21 08:32:18.799
+!MESSAGE (Build null) [ERROR]  An error occurred while parsing scope 'library class/type' : Cannot recover from the syntax error
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:19.177
+!MESSAGE (Build null) [ERROR]  ---------------------start check----------------------
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:19.178
+!MESSAGE check mode
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:19.304
+!MESSAGE (Build null) [ERROR]  workspace : file:\F:\tomcat\webapps\login
+
+!ENTRY com.aptana.rcp 4 0 2017-03-21 08:32:19.835
+!MESSAGE (Build null) [ERROR]  ********HBuilder正常启动：postStartup********
+
+!ENTRY com.pandora.rcp.upgrade 4 0 2017-03-21 08:32:19.917
+!MESSAGE (Build null) [ERROR]  HBuilder当前版本: 8.0.2.201703061842
+
+!ENTRY com.aptana.editor.css 4 0 2017-03-21 08:32:20.250
+!MESSAGE (Build null) [ERROR]  开始清理css错误marker...
+
+!ENTRY com.aptana.editor.css 4 0 2017-03-21 08:32:20.252
+!MESSAGE (Build null) [ERROR]  清理css错误marker结束
+
+!ENTRY com.aptana.parsing 4 0 2017-03-21 08:32:21.841
+!MESSAGE (Build null) [ERROR]  无效的属性类型“.webkit.SearchBoxImpl@4135441”属性“searchBoxJavaBridge_”
+
+!ENTRY com.pandora.index.store 4 0 2017-03-21 08:32:21.980
+!MESSAGE (Build null) [ERROR]  Port already in use: 56789; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+!STACK 0
+java.rmi.server.ExportException: Port already in use: 56789; nested exception is: 
+	java.net.BindException: Address already in use: JVM_Bind
+	at sun.rmi.transport.tcp.TCPTransport.listen(Unknown Source)
+	at sun.rmi.transport.tcp.TCPTransport.exportObject(Unknown Source)
+	at sun.rmi.transport.tcp.TCPEndpoint.exportObject(Unknown Source)
+	at sun.rmi.transport.LiveRef.exportObject(Unknown Source)
+	at sun.rmi.server.UnicastServerRef.exportObject(Unknown Source)
+	at sun.rmi.registry.RegistryImpl.setup(Unknown Source)
+	at sun.rmi.registry.RegistryImpl.<init>(Unknown Source)
+	at java.rmi.registry.LocateRegistry.createRegistry(Unknown Source)
+	at com.pandora.index.store.IndexStoreStartup.run(IndexStoreStartup.java:28)
+	at com.pandora.index.store.IndexStoreStartup.earlyStartup(IndexStoreStartup.java:18)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2489)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.net.BindException: Address already in use: JVM_Bind
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Native Method)
+	at java.net.TwoStacksPlainSocketImpl.socketBind(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.bind(Unknown Source)
+	at java.net.TwoStacksPlainSocketImpl.bind(Unknown Source)
+	at java.net.PlainSocketImpl.bind(Unknown Source)
+	at java.net.ServerSocket.bind(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at java.net.ServerSocket.<init>(Unknown Source)
+	at sun.rmi.transport.proxy.RMIDirectSocketFactory.createServerSocket(Unknown Source)
+	at sun.rmi.transport.proxy.RMIMasterSocketFactory.createServerSocket(Unknown Source)
+	at sun.rmi.transport.tcp.TCPEndpoint.newServerSocket(Unknown Source)
+	... 15 more
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.080
+!MESSAGE (Build null) [ERROR]  path1======C:\Program Files (x86)\Common Files\Apple\Apple Application Support\CoreFoundation.dll
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.103
+!MESSAGE (Build null) [ERROR]  path2======C:\\Program Files (x86)\\Common Files\\Apple\\Apple Application Support\\CoreFoundation.dll
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.107
+!MESSAGE (Build null) [ERROR]  loadSystemPath_05 error
+!STACK 0
+java.lang.UnsatisfiedLinkError: C:\Program Files (x86)\Common Files\Apple\Apple Application Support\CoreFoundation.dll: Can't find dependent libraries
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary1(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadSystemPath(LibraryFinder.java:203)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.foundCoreLibrary(LibraryFinder.java:217)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getCFLibrary(LibraryFinder.java:144)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:128)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.<clinit>(WinDeviceLibrary.java:68)
+	at com.pandora.launcher.core.iphone.jna.idevice.DeviceLibraryRegistry.getDeviceLibrary(DeviceLibraryRegistry.java:15)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher.<init>(IPhoneLauncher.java:79)
+	at com.pandora.launcher.core.listener.DeviceStartupListener.earlyStartup(DeviceStartupListener.java:29)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:87)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:66)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$63.run(Workbench.java:2489)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.117
+!MESSAGE (Build null) [ERROR]  添加Android设备监听......
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.163
+!MESSAGE (Build null) [ERROR]  path1======C:\Program Files (x86)\Common Files\Apple\Apple Application Support\CoreFoundation.dll
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.165
+!MESSAGE (Build null) [ERROR]  path2======C:\\Program Files (x86)\\Common Files\\Apple\\Apple Application Support\\CoreFoundation.dll
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.168
+!MESSAGE (Build null) [ERROR]  loadSystemPath_05 error
+!STACK 0
+java.lang.UnsatisfiedLinkError: C:\Program Files (x86)\Common Files\Apple\Apple Application Support\CoreFoundation.dll: Can't find dependent libraries
+	at java.lang.ClassLoader$NativeLibrary.load(Native Method)
+	at java.lang.ClassLoader.loadLibrary1(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary0(Unknown Source)
+	at java.lang.ClassLoader.loadLibrary(Unknown Source)
+	at java.lang.Runtime.load0(Unknown Source)
+	at java.lang.System.load(Unknown Source)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.loadSystemPath(LibraryFinder.java:203)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.foundCoreLibrary(LibraryFinder.java:217)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getCFLibrary(LibraryFinder.java:144)
+	at com.pandora.launcher.core.iphone.jna.LibraryFinder.getMDLibrary(LibraryFinder.java:128)
+	at com.pandora.launcher.core.iphone.jna.md.LibraryInstance.getMDLibrary(LibraryInstance.java:15)
+	at com.pandora.launcher.core.iphone.jna.idevice.win.WinDeviceLibrary.addNotificationHandler(WinDeviceLibrary.java:73)
+	at com.pandora.launcher.core.iphone.IPhoneLauncher$5.run(IPhoneLauncher.java:653)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.pandora.launcher.core 4 0 2017-03-21 08:32:22.187
+!MESSAGE (Build null) [ERROR]  library is null!!!!!
+
+!ENTRY com.pandora.stats.core 1 0 2017-03-21 08:32:22.209
+!MESSAGE 
+
+!ENTRY org.eclipse.core.net 4 0 2017-03-21 08:32:23.307
+!MESSAGE WinHttp.GetProxyForUrl for pac failed with error '²»ÄÜÏÂÔشúÀí·þÎñÆ÷×Զ¯ÅäÖ' #12167.
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-03-21 08:32:23.593
+!MESSAGE F:\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content-561804826.jar 是合法的jar
+
+!ENTRY org.eclipse.equinox.p2.repository 4 0 2017-03-21 08:32:23.996
+!MESSAGE F:\HBuilder\p2\org.eclipse.equinox.p2.repository\cache\content1190459293.jar 是合法的jar
+
+!ENTRY com.aptana.scripting 4 0 2017-03-21 08:32:24.140
+!MESSAGE (Build null) [ERROR]  loadBundles异常
+!STACK 0
+org.jruby.exceptions.RaiseException: (Errno::EINVAL) =::
+	at org.jruby.RubyHash.replace(org/jruby/RubyHash.java:1623)
+
+!ENTRY com.aptana.core 4 0 2017-03-21 08:33:02.702
+!MESSAGE (Build null) [ERROR]  *********索引不存在触发 FULL BUILD **********F:/tomcat/webapps/login/login
+
+!ENTRY org.eclipse.ui.workbench 2 0 2017-03-21 08:33:20.928
+!MESSAGE A handler conflict occurred.  This may disable some commands.
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-03-21 08:33:20.928
+!MESSAGE Conflict for 'org.eclipse.search.ui.performTextSearchWorkspace':
+HandlerActivation(commandId=org.eclipse.search.ui.performTextSearchWorkspace,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search2.internal.ui.text2.FindInWorkspaceActionDelegate),
+	expression=AndExpression(ActionSetExpression(org.eclipse.search.searchActionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.search.ui.performTextSearchWorkspace,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search2.internal.ui.text2.FindInWorkspaceActionDelegate),
+	expression=AndExpression(ActionSetExpression(com.pandora.ui.search.actionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-03-21 08:33:20.928
+!MESSAGE Conflict for 'org.eclipse.ui.edit.text.gotoLastEditPosition':
+HandlerActivation(commandId=org.eclipse.ui.edit.text.gotoLastEditPosition,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.texteditor.GotoLastEditPositionAction),
+	expression=AndExpression(ActionSetExpression(com.pandora.ui.annotationNavigation.actionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.ui.edit.text.gotoLastEditPosition,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.ui.texteditor.GotoLastEditPositionAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.ui.edit.text.actionSet.navigation,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-03-21 08:33:20.928
+!MESSAGE Conflict for 'org.eclipse.search.ui.performTextSearchProject':
+HandlerActivation(commandId=org.eclipse.search.ui.performTextSearchProject,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search2.internal.ui.text2.FindInProjectActionDelegate),
+	expression=AndExpression(ActionSetExpression(com.pandora.ui.search.actionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.search.ui.performTextSearchProject,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search2.internal.ui.text2.FindInProjectActionDelegate),
+	expression=AndExpression(ActionSetExpression(org.eclipse.search.searchActionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-03-21 08:33:20.928
+!MESSAGE Conflict for 'org.eclipse.search.ui.performTextSearchFile':
+HandlerActivation(commandId=org.eclipse.search.ui.performTextSearchFile,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search2.internal.ui.text2.FindInFileActionDelegate),
+	expression=AndExpression(ActionSetExpression(org.eclipse.search.searchActionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.search.ui.performTextSearchFile,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search2.internal.ui.text2.FindInFileActionDelegate),
+	expression=AndExpression(ActionSetExpression(com.pandora.ui.search.actionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+!SUBENTRY 1 org.eclipse.ui.workbench 2 0 2017-03-21 08:33:20.928
+!MESSAGE Conflict for 'org.eclipse.search.ui.openSearchDialog':
+HandlerActivation(commandId=org.eclipse.search.ui.openSearchDialog,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search.internal.ui.OpenSearchDialogAction),
+	expression=AndExpression(ActionSetExpression(org.eclipse.search.searchActionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+HandlerActivation(commandId=org.eclipse.search.ui.openSearchDialog,
+	handler=ActionDelegateHandlerProxy(null,org.eclipse.search.internal.ui.OpenSearchDialogAction),
+	expression=AndExpression(ActionSetExpression(com.pandora.ui.search.actionSet,org.eclipse.ui.internal.WorkbenchWindow@3adbda),WorkbenchWindowExpression(org.eclipse.ui.internal.WorkbenchWindow@3adbda)),sourcePriority=16640)
+
+!ENTRY org.eclipse.osgi 2 1 2017-03-21 08:33:21.023
+!MESSAGE NLS unused message: BrowserComposite_setSize_Desc in: com.pandora.view.browser.views.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-03-21 08:33:21.023
+!MESSAGE NLS unused message: BrowserComposite_setSize_Title in: com.pandora.view.browser.views.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-03-21 08:33:21.024
+!MESSAGE NLS unused message: BrowserComposite_InvalidHeight in: com.pandora.view.browser.views.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-03-21 08:33:21.025
+!MESSAGE NLS unused message: BrowserComposite_InvalidWidth in: com.pandora.view.browser.views.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-03-21 08:33:21.025
+!MESSAGE NLS unused message: BrowserComposite_LBL_Height in: com.pandora.view.browser.views.Messages
+
+!ENTRY org.eclipse.osgi 2 1 2017-03-21 08:33:21.026
+!MESSAGE NLS unused message: BrowserComposite_LBL_Width in: com.pandora.view.browser.views.Messages
+
+!ENTRY com.pandora.stats.core 4 0 2017-03-21 08:33:25.429
+!MESSAGE (Build null) [ERROR]  list job time: 3166

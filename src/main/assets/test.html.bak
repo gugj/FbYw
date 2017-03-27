@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+ <head>
+ <meta http-equiv="content-type" content="charset=gbk"/>
+  <title> New Document </title>
+  
+  <script src="jquery.js" type="text/javascript" ></script>
+	<script>
+	$(function(){
+			
+		$("#start").click(function(){
+			maps();
+			aa();
+		});
+		$("#stop").click(function(){
+			gps.stop();
+		});
+		
+		
+	});
+	function maps(){
+			  var jw=gps.getCoordinate();
+			  var map="http://api.map.baidu.com/staticimage?width=400&height=300&center="+jw+"&zoom=18&markers="+jw;
+			 
+			$("#maploact").attr("src",map);
+		}
+	function aa(){
+		//maps();
+			var addr=gps.getInfo();
+			util.Toast(addr);
+			$("#span").html(addr);
+		}
+	</script>
+ </head>
+
+ <body>
+ <a  href="#" onclick="aa()" >test</a>
+	<a id="start" href="#" >开始定位</a>
+	<a id="stop" href="#" >停止定位</a><br/>
+	<img width="100%" id="maploact" src=""/>
+	<span id="span"></span>
+ </body>
+</html>
