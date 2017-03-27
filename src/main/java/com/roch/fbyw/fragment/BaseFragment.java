@@ -20,6 +20,7 @@ import com.roch.fbyw.R;
 import com.roch.fbyw.dialog.NoticeDialog;
 import com.roch.fbyw.utils.Common;
 import com.roch.fbyw.utils.ToastUtils;
+import com.tencent.smtt.export.external.interfaces.GeolocationPermissionsCallback;
 import com.tencent.smtt.sdk.WebChromeClient;
 import com.tencent.smtt.sdk.WebSettings;
 import com.tencent.smtt.sdk.WebView;
@@ -74,6 +75,22 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
 		webView = (com.tencent.smtt.sdk.WebView) contentView.findViewById(R.id.webView);
 		WebSettings webSettings = webView.getSettings();
 		webSettings.setJavaScriptEnabled(true);
+
+		//-----------------------------------------------------
+		webSettings.setDomStorageEnabled(true);
+		webView.setWebChromeClient(new WebChromeClient(){
+			@Override
+			public void onGeolocationPermissionsShowPrompt(String s, GeolocationPermissionsCallback geolocationPermissionsCallback) {
+				geolocationPermissionsCallback.invoke(s,true,false);
+				super.onGeolocationPermissionsShowPrompt(s, geolocationPermissionsCallback);
+			}
+			//配置权限（同样在WebChromeClient中实现）
+//			@Override
+//			public void onGeolocationPermissionsShowPrompt(String origin, Callback callback) {
+//				callback.invoke(origin, true, false);
+//				super.onGeolocationPermissionsShowPrompt(origin, callback);
+//			}
+		});
 	}
 
 
@@ -82,7 +99,6 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
 	 */
 	public abstract void initData();
 
-	public boolean loadSuccess=false;
 	/**
 	 * 3.加载网址
 	 */
@@ -96,15 +112,12 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
 				System.out.println("网页的title为：" + title);
 				setTitle(title);
 				view.loadUrl(url);
-				loadSuccess=true;
-
 				return true;
 			}
 
 			@Override
 			public void onReceivedError(WebView var1, int var2, String var3, String var4) {
 				progressBar.setVisibility(View.GONE);
-				loadSuccess=false;
 				ToastUtils.showNormalToast(getActivity(), "网页加载失败");
 			}
 		});
@@ -122,9 +135,6 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
 				progressBar.setProgress(newProgress);
 			}
 		});
-		if(loadSuccess){
-
-		}
 	}
 
 
@@ -150,7 +160,7 @@ public abstract class BaseFragment extends Fragment implements View.OnClickListe
 		switch (v.getId()) {
 			case R.id.tvEnter:
 				String url = etWebsite.getText().toString();
-				if (TextUtils.isEmpty(url) || !url.startsWith("http")) {
+				if (TextUtils.isEmpty(url)) {  //   || !url.startsWith("http")
 //					ToastUtil.show("网址错误!");
 					ShowToast("网址错误!");
 					return;
